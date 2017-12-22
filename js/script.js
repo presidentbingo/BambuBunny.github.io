@@ -112,7 +112,7 @@ $('.nav a').bind('click', function () {
 
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
-		var height = 300;
+		var height = -1;
 	  //alert(batas);
 	  
 	  if (top > height) {

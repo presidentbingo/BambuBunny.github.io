@@ -220,7 +220,7 @@ a:hover{
 	
 }
 .menu-scroll .navbar-default .navbar-nav>li>a {
-    color: #fff;
+	color: #fff;
 }
 .menu-scroll a.logo img{
 	color:#fff;
@@ -254,8 +254,8 @@ a:hover{
     min-height: 80px;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #777;
-    text-transform: uppercase;
+    color: #070707;
+	text-transform: uppercase;
 }
 
 
@@ -263,7 +263,7 @@ a:hover{
 /* Banner section */
 
 .banner{
-	background:url(../images/bannerbg.jpg) no-repeat;
+	background:url(../images/school/renegade.JPG) no-repeat;
 	position:relative;
 }
 .main_banner_area{
