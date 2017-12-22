@@ -33,6 +33,29 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
+	<style>
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+	</style>
+
 	</head>
 	<body>
 		
@@ -47,12 +70,17 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
+						<div class="dropdown">
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="features">Features</a></li>
-						<li><a href="#" data-nav-section="how-it-works">How It Works</a></li>
-						<li><a href="#" data-nav-section="faq">FAQ</a></li>
-						<li><a href="#" data-nav-section="products">Products</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
+							<div class="dropdown-content" align="left">
+								<li><a href="#" data-nav-section="about">About</a></li>
+								<li><a href="#" data-nav-section="pictures">Pictures</a></li>
+							  </div>
+						</div>
+						<li><a href="#" data-nav-section="features">TSA Chapter</a></li>
+						<li><a href="#" data-nav-section="how-it-works">STEM</a></li>
+						<li><a href="#" data-nav-section="faq">AI</a></li>
+						<li><a href="#" data-nav-section="products">Bambu Bunny</a></li>
 					</ul>
 				</div>
 			</div>
@@ -76,7 +104,7 @@
 		</div>
 	</div>
 
-	<div class="gtco-section" id="gtco-counter">
+	<div class="gtco-section" id="gtco-counter" data-section="about">
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
@@ -109,7 +137,7 @@
 		</div>
 
 
-	<div id="gtco-products" data-section="products">
+	<div id="gtco-products" data-section="pictures">
 		<div class="gtco-container">
 			<!--<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
