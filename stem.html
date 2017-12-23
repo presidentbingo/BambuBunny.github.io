@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-	<head>	
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bambu &mdash; Home</title>
+	<title>Bambu &mdash; STEM</title>
 	<link rel="icon" 
 	type="image/png" 
 	href="./images/bambu/bambu.png">
@@ -63,7 +63,7 @@
 
 	</head>
 	<body>
-	
+		
 	<div class="gtco-loader"></div>
 	
 	<div id="page">
@@ -76,28 +76,28 @@
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
 						<div class="dropdown">
-						<li><a href="index.html" data-nav-section="home">Home</a>-</li>
+						<li><a href="index.html" onclick="home();">Home</a>-</li>
 							<div class="dropdown-content" align="center">
-								<li><a href="#" data-nav-section="about">About</a>-</li>
-								<li><a href="#" data-nav-section="pictures">Pictures</a></li>
+								<li><a href="#" onclick="home_about();">About</a>-</li>
+								<li><a href="#" onclick="home_pictures();">Pictures</a></li>
 							</div>
 						</div>
 						<div class="dropdown">
 						<li><a href="chapter.html" onclick="chapter();">TSA Chapter</a>-</li>
-						<div class="dropdown-content" align="center">
+							<div class="dropdown-content" align="center">
 								<li><a href="#" onclick="chapter_officers();">Officers</a>-</li>
 								<li><a href="#" onclick="chapter_activities();">Activities</a>-</li>
 								<li><a href="#" onclick="chapter_accomplishments();">Accomplishments</a></li>
 							</div>
 						</div>
 						<div class="dropdown">
-						<li><a href="stem.html" onclick="stem();">STEM</a>-</li>
+						<li><a href="stem.html" data-nav-section="home">STEM</a>-</li>
 							<div class="dropdown-content" align="center">
-								<li><a href="#" onclick="stem_ib_program();">IB Program</a>-</li>
-								<li><a href="#" onclick="stem_health_academy();">Health Academy</a>-</li>
-								<li><a href="#" onclick="stem_mass_media();">Mass Media</a>-</li>
-								<li><a href="#" onclick="stem_advanced_placement();">Advanced Placement</a>-</li>
-								<li><a href="#" onclick="stem_extracurriculars();">Extracurriculars</a></li>
+								<li><a href="#" data-nav-section="ib-program">IB Program</a>-</li>
+								<li><a href="#" data-nav-section="health-academy">Health Academy</a>-</li>
+								<li><a href="#" data-nav-section="mass-media">Mass Media</a>-</li>
+								<li><a href="#" data-nav-section="advanced-placement">Advanced Placement</a>-</li>
+								<li><a href="#" data-nav-section="extracurriculars">Extracurriculars</a></li>
 							</div>
 						</div>
 						<div class="dropdown">
@@ -203,89 +203,125 @@
 				window.location.href = "bambu.html#buy-now";
 			}
 	</script>	
-	
-	<div id="gtco-header" data-section="home" class="gtco-cover header-fixed" role="banner" style="background-image:url(./images/school/renegade.JPG);">
+
+	<div id="gtco-header" data-section="home" class="gtco-cover header-fixed" role="banner" style="background-image:url(./images/school/redwin.jpg);">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 text-center">
 					<div class="display-t">
 						<div class="display-tc">
-							<h1 class="animate-box" data-animate-effect="fadeIn">Seminole High School</h1>
-							<h2 class="animate-box" data-animate-effect="fadeIn">Technology Student Association</h2>
+							<h1 class="animate-box" data-animate-effect="fadeIn">STEM Curriculum</h1>
+							<h2 class="animate-box" data-animate-effect="fadeIn"></h2>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div id="about" data-section="about" class="gtco-section">
+
+	<div id="gtco-features" class="border-bottom">
 			<div class="gtco-container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>About us</h2>
-						<p>Seminole High School is a comprehensive public high school enrolling approximately 3200 students in grades 9 through 12. The school offers two magnet programs, the International Baccalaureate (IB) and Academy of Health Careers, plus the traditional comprehensive high school program which offers remedial, regular, honors, gifted, and Advanced Placement classes. </p>
+					<div class="col-md-8 text-left animate-box" data-animate-effect="fadeIn">
+						<h3>Standard Graduation Diploma Requirements:</h3>
+						<li>English I-IV (or equivalent accelerated course)</li>
+						<li>Math grades 912 (must include Algebra and Geometry)</li>
+						<li>Science credits - must include Biology and three courses must contain a lab component and two equally rigorous courses</li>
+						<li>Social Studies - must include U.S. History, World History, U.S. Government, and Economics with Financial Literacy</li>
+						<li>One Fine/Performing Arts credit</li>
+						<li>Half Personal Fitness and half PE Elective</li>
+						<li>Elective Credits</li>
+						<li>Must include one online course</li>
+						<br>
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-						<div class="feature-center">
-							<span class="icon">
-								<i class="ti-eye"></i>
-							</span>
-							<span class="counter-label">Vision</span>
-							<span class="counter">Every student will achieve at his or her maximum potential in an engaging, inspiring, and challenging learning environment. </span>
-						</div>
+					<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<img src="./images/school/administration.png" alt="" class="img-responsive">
 					</div>
-					<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-						<div class="feature-center">
-							<span class="icon">
-								<i class="ti-flag"></i>
-							</span>
-							<span class="counter-label">Mission Statement</span>
-							<span class="counter">Our mission is to cultivate the potential in every student to thrive as a global citizen by inspiring a love of learning, encouraging civic encouragement, challenging and supporting every student to achieve academic excellence, while embracing the full richness and diversity of our community. </span>
-						</div>
-					</div>					
+					<div class="col-md-6 animate-box" data-animate-effect="fadeIn">
+						<h3>Administration</h3>
+							<li>Dr. Connie Collins, Principal</li>							
+							<li>Dr. Michelle Backel, Assistant Principal</li>							
+							<li>Mr. Barry Coleman, Assistant Principal</li>
+							<li>Mr. Michael Hennessy, Assistant Principal</li>
+							<li>Dr. Orvie Mizzell-Bullock, Assistant Principal</li>
+							<li>Mrs. Nicole Wysong, Assistant Principal</li>
+					</div>
+					<div class="col-md-7 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<h3>Technology Usage:</h3>
+						<p style="color:#777;">Seminole County Public Schools believes technology is a valuable educational tool. All classroom teachers use technology as an instructional tool, such as use of the Internet to access encyclopedias, magazines, the district’s media/library catalog, websites for educational projects, on-line district and state classes also to conduct research in preparation for a project or presentation.</p>
+						<img src="./images/school/laptop-use.jpg" alt="" width="75%" height="75%">
+					</div>
 				</div>
 			</div>
 		</div>
 
-
-	<div id="pictures" data-section="pictures">
+	<div id="ib-program" class="border-bottom" data-section="ib-program">
 		<div class="gtco-container">
-			<!--<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Pictures</h2>
-					<p>Seminole High School is filled w fun bb lets take a look :).</p>
-				</div>
-			</div>-->
-			<div class="row">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<img src="images/school/crowd.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/hands.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/researching.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/teaching.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/learning.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/singing.png" alt="">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<img src="./images/school/ib.png" alt="" width="25%" height="25%">
+						<h2>IB Program:</h2>
+						<p style="color:#777;">The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
+		<div id="health-academy" class="border-bottom" data-section="health-academy">
+		<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<img src="./images/school/health-academy-scaled.png" alt="" width="50%" height="50%">
+						<h2>Health Academy:</h2>
+						<p style="color:#777;">The mission of the Academy of Health Careers at Seminole High School is to afford students a rigorous interdisciplinary instructional program that ensures relevant preparation for entry in the health care industry and to pursue health careers at the post-secondary level upon graduation. The mission is achieved through a strong partnership with the health industry, community, and with institutes of higher learning. The Healthcare system requires many talented individuals to lead the way in health interventions.  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="mass-media" class="border-bottom" data-section="mass-media">
+		<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<img src="./images/school/mass-media.png" alt="" width="20%" height="20%">
+						<h2>Mass Media:</h2>
+						<p style="color:#777;">The Mass Media CAPE Academy at Seminole High School has expanded to include Web & Digital Design, Microsoft Business Applications, Programming, Video Production, Newspaper and Yearbook. The purpose of this website is to assist parents and students to review these outstanding programs and choose the course path that is the most beneficial for the student’s future careers and education. All courses offer either Adobe or Microsoft industry certifications. Many other benefits to these programs include potential scholarships, college credits, certifications, designations, student portfolio development, as well as advanced career training.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="advanced-placement" class="border-bottom" data-section="advanced-placement">
+		<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<img src="./images/school/ap.png" alt="" width="20%" height="20%">
+						<h2>Advanced Placement:</h2>
+						<p style="color:#777;">The College Board’s Advanced Placement (AP) program is a nationwide program consisting of over 30 college level courses and exams in subjects ranging from art to statistics offered at participating high schools. Studies have shown that students, who complete a solid academic core, including advanced courses, are more likely to be successful in college. Many school counselors have found that AP courses provide the challenging content necessary to engage all types of learners. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="extracurriculars" class="border-bottom" data-section="extracurriculars">
+		<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box" data-animate-effect="fadeIn">
+						<br>
+						<img src="./images/school/extracurriculars.png" alt="" width="15%" height="15%">
+						<h2>Extracurriculars:</h2>
+						<p style="color:#777;">Science NHS is a prominent scientific organization that will engender a new group of young thinkers who will be the future of industry, research, and scientific exploration for America. The Seminole High Science NHS is organized into 8 distinct scientific committees which are as follows: chemistry, biology, computer science, physics, psychology, environmental science, health science, and STEMpowerment. Science NHS members have numerous opportunities to explore their scientific endeavors through these committee workshops held throughout the year. Members can learn to program a mobile app, conduct a forensics lab, practice how to do hands-only CPR, and be apart of a short term memory loss experiment. Science NHS embraces all there is to offer in the field of science. To uphold good standing within the chapter, all members are required to document and submit to the secretaries: 90 minutes of science tutoring, 4 hours of science experience, and 10 hours of community service. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	<footer id="gtco-footer" role="contentinfo" style="background: #efefef;">
 		<div class="gtco-container">
 			<div class="row row-pb-md">

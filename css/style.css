@@ -5,11 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*
-* ======================================================= */
 body {
   font-family: "Droid Sans", Arial, sans-serif;
   font-weight: 400;
@@ -1423,6 +1418,7 @@ form label {
     text-align: left !important;
   }
 }
+
 .gtco-nav .gtco-contact ul {
   padding: 0;
   margin: 0 0 20px 0;
@@ -1700,6 +1696,22 @@ form label {
 }
 
 #gtco-faq {
+  background: #efefef;
+}
+
+#ib-program {
+  background: #efefef;
+}
+
+#health-academy {
+  background: #ffffff;
+}
+
+#mass-media {
+  background: #efefef;
+}
+
+#extracurriculars {
   background: #efefef;
 }
 

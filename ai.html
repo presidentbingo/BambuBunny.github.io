@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-	<head>	
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bambu &mdash; Home</title>
+	<title>Bambu &mdash; Artificial Intelligence</title>
 	<link rel="icon" 
 	type="image/png" 
 	href="./images/bambu/bambu.png">
@@ -63,7 +63,7 @@
 
 	</head>
 	<body>
-	
+		
 	<div class="gtco-loader"></div>
 	
 	<div id="page">
@@ -76,15 +76,15 @@
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
 						<div class="dropdown">
-						<li><a href="index.html" data-nav-section="home">Home</a>-</li>
+						<li><a href="index.html" onclick="home();">Home</a>-</li>
 							<div class="dropdown-content" align="center">
-								<li><a href="#" data-nav-section="about">About</a>-</li>
-								<li><a href="#" data-nav-section="pictures">Pictures</a></li>
+								<li><a href="#" onclick="home_about();">About</a>-</li>
+								<li><a href="#" onclick="home_pictures();">Pictures</a></li>
 							</div>
 						</div>
 						<div class="dropdown">
 						<li><a href="chapter.html" onclick="chapter();">TSA Chapter</a>-</li>
-						<div class="dropdown-content" align="center">
+							<div class="dropdown-content" align="center">
 								<li><a href="#" onclick="chapter_officers();">Officers</a>-</li>
 								<li><a href="#" onclick="chapter_activities();">Activities</a>-</li>
 								<li><a href="#" onclick="chapter_accomplishments();">Accomplishments</a></li>
@@ -101,14 +101,14 @@
 							</div>
 						</div>
 						<div class="dropdown">
-						<li><a href="ai.html" onclick="ai();">Artificial Intelligence</a>-</li>
+						<li><a href="ai.html" data-nav-section="home">Artificial Intelligence</a>-</li>
 							<div class="dropdown-content" align="center">
-								<li><a href="#" onclick="ai_history();">History</a>-</li>
-								<li><a href="#" onclick="ai_technology_behind_ai();">Technology Behind AI</a>-</li>
-								<li><a href="#" onclick="ai_future_uses();">Future Uses</a>-</li>
-								<li><a href="#" onclick="ai_available_technologies();">Availible Technologies</a>-</li>
-								<li><a href="#" onclick="ai_safety();">Safety</a>-</li>
-								<li><a href="#" onclick="ai_pros_cons();">Pros & Cons</a></li>
+								<li><a href="#" data-nav-section="history">History</a>-</li>
+								<li><a href="#" data-nav-section="technology-behind-ai">Technology Behind AI</a>-</li>
+								<li><a href="#" data-nav-section="future-uses">Future Uses</a>-</li>
+								<li><a href="#" data-nav-section="availible-technologies">Availible Technologies</a>-</li>
+								<li><a href="#" data-nav-section="safety">Safety</a>-</li>
+								<li><a href="#" data-nav-section="pros-cons">Pros & Cons</a></li>
 							</div>
 						</div>
 						<div class="dropdown">
@@ -203,83 +203,17 @@
 				window.location.href = "bambu.html#buy-now";
 			}
 	</script>	
-	
-	<div id="gtco-header" data-section="home" class="gtco-cover header-fixed" role="banner" style="background-image:url(./images/school/renegade.JPG);">
+
+	<div id="gtco-header" data-section="home" class="gtco-cover header-fixed" role="banner" style="background-image:url(./images/bb8.jpg);">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 text-center">
 					<div class="display-t">
 						<div class="display-tc">
-							<h1 class="animate-box" data-animate-effect="fadeIn">Seminole High School</h1>
-							<h2 class="animate-box" data-animate-effect="fadeIn">Technology Student Association</h2>
+							<h1 class="animate-box" data-animate-effect="fadeIn">Artificial Intelligence</h1>
+							<h2 class="animate-box" data-animate-effect="fadeIn"></h2>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="about" data-section="about" class="gtco-section">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>About us</h2>
-						<p>Seminole High School is a comprehensive public high school enrolling approximately 3200 students in grades 9 through 12. The school offers two magnet programs, the International Baccalaureate (IB) and Academy of Health Careers, plus the traditional comprehensive high school program which offers remedial, regular, honors, gifted, and Advanced Placement classes. </p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-						<div class="feature-center">
-							<span class="icon">
-								<i class="ti-eye"></i>
-							</span>
-							<span class="counter-label">Vision</span>
-							<span class="counter">Every student will achieve at his or her maximum potential in an engaging, inspiring, and challenging learning environment. </span>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-						<div class="feature-center">
-							<span class="icon">
-								<i class="ti-flag"></i>
-							</span>
-							<span class="counter-label">Mission Statement</span>
-							<span class="counter">Our mission is to cultivate the potential in every student to thrive as a global citizen by inspiring a love of learning, encouraging civic encouragement, challenging and supporting every student to achieve academic excellence, while embracing the full richness and diversity of our community. </span>
-						</div>
-					</div>					
-				</div>
-			</div>
-		</div>
-
-
-	<div id="pictures" data-section="pictures">
-		<div class="gtco-container">
-			<!--<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Pictures</h2>
-					<p>Seminole High School is filled w fun bb lets take a look :).</p>
-				</div>
-			</div>-->
-			<div class="row">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<img src="images/school/crowd.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/hands.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/researching.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/teaching.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/learning.png" alt="">
-					</div>
-					<div class="item">
-						<img src="images/school/singing.png" alt="">
 					</div>
 				</div>
 			</div>
