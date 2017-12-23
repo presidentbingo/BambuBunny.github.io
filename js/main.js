@@ -89,7 +89,6 @@
 		});
 	};
 
-
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
 
