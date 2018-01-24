@@ -220,54 +220,58 @@
 
 	<!-- | ======================================= TAB SELECTION ======================================= | -->
 
+<style>
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+</style>
+
 	<div id="gtco-features" class="border-top" data-section="features">
 			<div class="gtco-container">
 				<div class="row">
-					<br>
-					<div class="col-md-2 col-sm-6" id="history">
+					<div class="col-md-2 col-sm-6"> 
 						<div class="feature-center">
-							<span class="icon">
-								<i class="ti-book"></i>
+							<span class="icon" id="history">
+								<i class="ti-book grow" ></i>
 							</span>
 							<h3>History</h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6" id="technology-behind-ai">
+					<div class="col-md-2 col-sm-6">
 						<div class="feature-center">
 							<span class="icon">
-								<i class="ti-tablet"></i>
+								<i class="ti-tablet grow" id="technology-behind-ai"></i>
 							</span>
 							<h3>Technology Behind AI</h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6" id="future-uses">
+					<div class="col-md-2 col-sm-6">
 						<div class="feature-center">
 							<span class="icon">
-								<i class="ti-ruler-pencil"></i>
+								<i class="ti-ruler-pencil grow" id="future-uses"></i>
 							</span>
 							<h3>Future Uses</h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6" id="available-technologies">
+					<div class="col-md-2 col-sm-6">
 						<div class="feature-center">
 							<span class="icon">
-								<i class="ti-check-box"></i>
+								<i class="ti-check-box grow" id="available-technologies"></i>
 							</span>
 							<h3>Available Technologies</h3>
 						</div>
 					</div>
-				<div class="col-md-2 col-sm-6" id="safety">
+				<div class="col-md-2 col-sm-6">
 						<div class="feature-center">
 							<span class="icon">
-								<i class="ti-shield"></i>
+								<i class="ti-shield grow" id="safety"></i>
 							</span>
 							<h3>Safety</h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6" id="pros-cons">
+					<div class="col-md-2 col-sm-6">
 						<div class="feature-center">
 							<span class="icon">
-								<i class="ti-thumb-up"></i>
+								<i class="ti-thumb-up grow" id="pros-cons"></i>
 							</span>
 							<h3>Benefits</h3>
 						</div>
@@ -317,6 +321,8 @@
 		</div>
 
 	</pineapples>
+
+		</div></div>
 
 	<!-- | ======================================= TEST TABS ======================================= | -->
 
@@ -463,7 +469,7 @@
 	-->
 
 	<!-- | ======================================= FOOTER ======================================= | -->
-
+	
 	<footer id="gtco-footer" role="contentinfo" style="background: #efefef;">
 		<div class="gtco-container">
 			<div class="row row-pb-md">
